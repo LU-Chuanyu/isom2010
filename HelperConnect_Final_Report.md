@@ -19,7 +19,7 @@
 
 </div>
 
-> **Abstract.** Hong Kong hosts more than 340,000 Foreign Domestic Helpers (FDHs), yet the market through which they are hired remains structurally inefficient: employers select among generic, agency-curated CVs while the true determinants of fit — past performance, soft skills, and verified competencies — are trapped in opaque silos. A single mis-hire imposes losses of HK$15,000–30,000 on the family and threatens the helper's legal residence. This report frames the FDH labour market as a textbook *Akerlofian* lemons market and proposes **HelperConnect**, a multi-sided digital platform that operationalises verified post-hire reviews, AI-driven *Family Fit Scores*, and a four-phase sequential onboarding strategy. Drawing on the theoretical apparatus developed in lectures W2–W10 and the Vivino case (S13), we argue that HelperConnect can convert a fragmented service market into a defensible data-network business with four complementary revenue streams and a projected LTV/CAC of 11.25× by Year 3.
+> **Abstract.** Hong Kong hosts more than 340,000 Foreign Domestic Helpers (FDHs), yet the market through which they are hired remains structurally inefficient: employers select among generic, agency-curated CVs while the true determinants of fit — past performance, soft skills, and verified competencies — are trapped in opaque silos. A single mis-hire imposes losses of HK$15,000–30,000 on the family and threatens the helper's legal residence. This report frames the FDH labour market as a textbook *Akerlofian* lemons market and proposes **HelperConnect**, a multi-sided digital platform that operationalises verified post-hire reviews, AI-driven *Family Fit Scores*, and a four-phase sequential onboarding strategy. Drawing on the established literature on information asymmetry, digital-platform economics, and crowdsourced reputation systems — and benchmarking against the Vivino precedent in the wine market — we argue that HelperConnect can convert a fragmented service market into a defensible data-network business with four complementary revenue streams and a projected LTV/CAC of 11.25× by Year 3.
 
 ---
 
@@ -48,20 +48,20 @@ The Foreign Domestic Helper (FDH) market is one of Hong Kong's largest yet least
 
 Despite this systemic importance, the *hiring* of FDHs remains anchored in pre-digital practices. Most Hong Kong families still select candidates from standardised, agency-supplied CVs and a single 20-minute video interview. Agencies, optimising for placement velocity rather than match accuracy, present uniformly worded résumés in which language proficiency, eldercare experience, cooking competence, and personality are difficult to differentiate (Mission for Migrant Workers, 2023). Once a placement fails, the employer absorbs roughly **HK$15,000–30,000** in sunk costs (airfare, visa, medical, agency, and statutory long-service expenses) and several weeks of caregiving disruption; the helper, in turn, faces forced repatriation under the *Two-Week Rule*, jeopardising her legal residence and family income (Enrich HK, 2022).
 
-The thesis of this report is that the FDH hiring market exhibits four interlocking frictions — **information asymmetry, fragmented data, high search cost, and price opacity** — that, taken together, constitute a textbook *Akerlofian* market failure (Akerlof, 1970). These frictions are not exogenous social conditions but rather a *missing-information-system* problem: no central platform aggregates, verifies, and redistributes trustworthy signals about helper quality. Lectures W2–W3 framed information systems as the connective tissue that dissolves data silos within firms; the same logic, scaled to a labour market, motivates a platform-level solution.
+The thesis of this report is that the FDH hiring market exhibits four interlocking frictions — **information asymmetry, fragmented data, high search cost, and price opacity** — that, taken together, constitute a textbook *Akerlofian* market failure (Akerlof, 1970). These frictions are not exogenous social conditions but rather a *missing-information-system* problem: no central platform aggregates, verifies, and redistributes trustworthy signals about helper quality. The information-systems literature has long argued that integrated information architectures dissolve the data silos that fragment information within and across firms (Laudon & Laudon, 2018); the same logic, scaled to a labour market, motivates a platform-level solution.
 
-We therefore propose **HelperConnect**, a multi-sided digital platform whose central asset is a proprietary, *verified-purchase* dataset of post-hire reviews. The platform's design synthesises the conceptual toolkit developed across the course: the digital-goods properties identified in W4–W5 (zero marginal cost, infinite reusability) endow review data with extraordinary economic leverage; the e-commerce taxonomy of W7 furnishes the revenue-model menu; the platform/network theory of W8–W9 positions HelperConnect as a *transaction platform with a data engine*; and the multi-sided business-model patterns of W10 inform our four-phase onboarding sequence.
+We therefore propose **HelperConnect**, a multi-sided digital platform whose central asset is a proprietary, *verified-purchase* dataset of post-hire reviews. The platform's design synthesises four established bodies of theory: the economics of digital goods (Shapiro & Varian, 1999) endow review data with extraordinary economic leverage thanks to near-zero marginal cost and infinite reusability; the e-commerce revenue-model literature (Laudon & Traver, 2021) furnishes the menu of monetisation patterns; two-sided platform theory (Rochet & Tirole, 2003; Parker, Van Alstyne, & Choudary, 2016) positions HelperConnect as a *transaction platform with a data engine*; and the multi-sided business-model literature (Eisenmann, Parker, & Van Alstyne, 2006) informs our four-phase onboarding sequence.
 
 [**Insert Figure 1: Conceptual Framework — From Course Theory to HelperConnect Design**]
 
 ```mermaid
 flowchart LR
-    A["W2–W3<br/>IS as central nervous system<br/>de-siloing data"] --> P["HelperConnect<br/>Verified-Review Database"]
-    B["W4–W5<br/>Digital-goods economics<br/>zero marginal cost"] --> P
-    C["W7<br/>E-commerce revenue models"] --> P
-    D["W8–W9<br/>Two-sided platforms<br/>network effects"] --> P
-    E["W10<br/>Multi-sided business model<br/>monetisation patterns"] --> P
-    F["S13 Vivino Case<br/>crowdsourced trust"] --> P
+    A["Information Systems Theory<br/>de-siloing data"] --> P["HelperConnect<br/>Verified-Review Database"]
+    B["Digital-goods economics<br/>zero marginal cost"] --> P
+    C["E-commerce<br/>revenue models"] --> P
+    D["Two-sided platforms<br/>network effects"] --> P
+    E["Multi-sided business model<br/>monetisation patterns"] --> P
+    F["Vivino case<br/>crowdsourced trust"] --> P
     P --> O1["Verified Reputation"]
     P --> O2["Family Fit Score"]
     P --> O3["One-stop ecosystem"]
@@ -78,7 +78,7 @@ The remainder of the report is organised as follows. §2 traces the project's in
 
 ## **2. Inspiration**
 
-The conceptual seed of HelperConnect was planted in **Session 13**, when Prof. Kim presented the *Vivino* case study. Vivino's founders confronted a wine market characterised by extreme expert-consumer information asymmetry, scattered reviews, and inconsistent prices. Rather than attempt to replace experts, they built a single-player utility — a label scanner married to a personal wine diary — that delivered standalone value from day one and, through crowdsourced photographs and ratings, gradually accumulated a labelled dataset that became impossible for incumbents to replicate (S13 Lecture Notes, 2026).
+The conceptual seed of HelperConnect was planted by the *Vivino* case study. Vivino's founders confronted a wine market characterised by extreme expert-consumer information asymmetry, scattered reviews, and inconsistent prices. Rather than attempt to replace experts, they built a single-player utility — a label scanner married to a personal wine diary — that delivered standalone value from day one and, through crowdsourced photographs and ratings, gradually accumulated a labelled dataset that became impossible for incumbents to replicate (Vivino, 2023).
 
 The structural parallel between the wine market and the FDH market is striking. Both feature **(i)** an "expert gap" in which suppliers (wineries / agencies) hold information that buyers (consumers / families) cannot independently verify; **(ii)** prohibitively **high search costs** — hundreds of bottles or hundreds of CVs evaluated under uncertainty; **(iii)** opaque pricing scattered across stores or across agencies; and **(iv)** **fragmented data** locked in trade publications, agency files, or word-of-mouth networks. If a label-scanner could digitise wine, our team reasoned, a *helper-profile-and-review system* could digitise the FDH market.
 
@@ -109,7 +109,7 @@ Helpers possess private information about their true skills, work attitude, and 
 
 ### **3.2 Fragmented Data (Information Silos)**
 
-A helper's prior employment history is fragmented across multiple agencies, the Immigration Department, and informal employer networks. None of these silos are interoperable — directly mirroring the pre-ERP "data-silo" problem analysed in W3 (W3 Lecture Notes, 2026). When a family attempts to verify a claim on a CV, the marginal cost of doing so is so high that most simply skip verification altogether.
+A helper's prior employment history is fragmented across multiple agencies, the Immigration Department, and informal employer networks. None of these silos are interoperable — directly mirroring the classic pre-ERP "data-silo" problem long described in the information-systems literature (Laudon & Laudon, 2018). When a family attempts to verify a claim on a CV, the marginal cost of doing so is so high that most simply skip verification altogether.
 
 ### **3.3 High Search Cost**
 
@@ -117,7 +117,7 @@ The current process forces employers to repeat costly search activities for ever
 
 ### **3.4 Price Opacity**
 
-Even when a candidate is identified, the *true* total cost of hiring is obscured by layered fees: agency commission (often HK$8,000–15,000), one-way airfare (HK$2,500–5,000), mandatory insurance (HK$1,500), medical examination (HK$800), and visa processing (HK$280). Without benchmarking data, employers cannot tell whether they are receiving fair pricing — a phenomenon Vivino described as "negotiation blindness" (S13 Lecture Notes, 2026).
+Even when a candidate is identified, the *true* total cost of hiring is obscured by layered fees: agency commission (often HK$8,000–15,000), one-way airfare (HK$2,500–5,000), mandatory insurance (HK$1,500), medical examination (HK$800), and visa processing (HK$280). Without benchmarking data, employers cannot tell whether they are receiving fair pricing — a phenomenon that recurs across opaque consumer markets, including the wine market that Vivino disrupted (Vivino, 2023).
 
 [**Insert Figure 3: The Four-Friction Map of the FDH Hiring Market**]
 
@@ -148,15 +148,15 @@ Akerlof's (1970) seminal *Market for Lemons* established that when one side of a
 
 ### **4.2 Platform Theory and Two-Sided Markets**
 
-Rochet and Tirole (2003) formalised the economics of two-sided markets, showing that pricing on each side must internalise cross-side externalities. Parker, Van Alstyne, and Choudary (2016) extended the analysis to digital platforms, articulating the now-canonical distinction between **pipe** firms (linear value chains) and **platform** firms (orchestrated interactions). Lecture W8 introduced this framework in the context of Airbnb and Uber; W9 sharpened it by distinguishing **transaction platforms** (Uber, FoodPanda, LinkedIn) from **innovation platforms** (Windows, iOS, Nintendo). HelperConnect is, in this taxonomy, a transaction platform whose long-run defensibility derives from a *data engine* that converts each transaction into a re-usable signal.
+Rochet and Tirole (2003) formalised the economics of two-sided markets, showing that pricing on each side must internalise cross-side externalities. Parker, Van Alstyne, and Choudary (2016) extended the analysis to digital platforms, articulating the now-canonical distinction between **pipe** firms (linear value chains) and **platform** firms (orchestrated interactions). Within this body of work a further distinction is commonly drawn between **transaction platforms** (e.g., Uber, Airbnb, LinkedIn) and **innovation platforms** (e.g., iOS, Android, Windows) (Cusumano, Gawer, & Yoffie, 2019). HelperConnect is, in this taxonomy, a transaction platform whose long-run defensibility derives from a *data engine* that converts each transaction into a re-usable signal.
 
 ### **4.3 Network Effects and Data Network Effects**
 
-A *direct* network effect arises when the value of a service to one user grows with the number of like users (Katz & Shapiro, 1985). In two-sided platforms, *cross-side* effects dominate: more drivers attract more riders and vice versa, generating the positive feedback loop famously sketched by David Sacks for Uber (W8 Lecture Notes, 2026). A *data* network effect, by contrast, arises when more usage produces better data, which improves product quality, which attracts more users (Hagiu & Wright, 2023). Vivino's Fit-Score-style algorithm illustrates the mechanism in consumer products; HelperConnect operationalises it for labour matching.
+A *direct* network effect arises when the value of a service to one user grows with the number of like users (Katz & Shapiro, 1985). In two-sided platforms, *cross-side* effects dominate: more drivers attract more riders and vice versa, generating the positive feedback loop popularised in Sacks' (2014) "Uber napkin" diagram. A *data* network effect, by contrast, arises when more usage produces better data, which improves product quality, which attracts more users (Hagiu & Wright, 2023). Vivino's Fit-Score-style algorithm illustrates the mechanism in consumer products; HelperConnect operationalises it for labour matching.
 
 ### **4.4 Digital Goods Economics**
 
-Lectures W4–W5 enumerated eight properties of digital goods: near-zero marginal cost, non-rivalry, indestructibility, ubiquity, richness, interactivity, personalisation, and social network effects. All eight apply to the structured review data that HelperConnect aggregates. Crucially, the **non-rivalry** property means a single review can simultaneously inform thousands of employers, while **personalisation** allows the same dataset to power individualised Family Fit Scores at trivial incremental cost.
+Shapiro and Varian (1999) and subsequent work (Brynjolfsson & McAfee, 2014) identify a cluster of properties — near-zero marginal cost, non-rivalry, indestructibility, ubiquity, richness, interactivity, personalisation, and social network effects — that distinguish digital goods from physical ones. All of these apply to the structured review data that HelperConnect aggregates. Crucially, the **non-rivalry** property means a single review can simultaneously inform thousands of employers, while **personalisation** allows the same dataset to power individualised Family Fit Scores at trivial incremental cost.
 
 [**Insert Figure 4: Theoretical Foundations of HelperConnect**]
 
@@ -177,11 +177,10 @@ mindmap
     Reputation Systems
       Resnick et al. 2000
       Tadelis 2016
-    Course Lectures W2–W10
-      Digital Goods W4–W5
-      E-commerce W7
-      Platforms W8–W9
-      Multi-sided BM W10
+    Digital Goods & E-commerce
+      Shapiro & Varian 1999
+      Brynjolfsson & McAfee 2014
+      Laudon & Traver 2021
 ```
 
 Taken together, the literature offers an unambiguous prediction: a platform that successfully crosses the cold-start barrier and accumulates a verified, multi-dimensional review dataset will enjoy compounding returns to scale and substantial switching costs on both sides.
@@ -199,7 +198,7 @@ HelperConnect is positioned as the **trust-infrastructure layer** of the Hong Ko
 Three features address the most acute pain points and constitute the platform's MVP:
 
 1. **Helper Profile Search.** A unified, filterable directory of verified helper profiles, each enriched with skill tags, prior employment history, and certifications. Replaces the agency-curated CV.
-2. **Authentic Feedback Channel.** A structured five-dimensional review system (Childcare, Eldercare, Cooking, Cleaning, Communication) that activates 90 days post-hire and is restricted to *verified employers* — an explicit nod to Vivino's "Verified Purchase" tag (S13 Lecture Notes, 2026).
+2. **Authentic Feedback Channel.** A structured five-dimensional review system (Childcare, Eldercare, Cooking, Cleaning, Communication) that activates 90 days post-hire and is restricted to *verified employers* — an explicit nod to Vivino's "Verified Purchase" tag (Vivino, 2023).
 3. **Helper Skills Preview.** Short, helper-uploaded demonstration videos (cooking, basic Cantonese, eldercare techniques) that surface tacit competencies invisible on paper CVs.
 
 ### **5.3 Mature Feature Set**
@@ -207,7 +206,7 @@ Three features address the most acute pain points and constitute the platform's 
 Once the verified-review database reaches critical mass, three additional features unlock:
 
 - **Family Fit Score** — a proprietary multi-dimensional matching score combining family-stated needs (newborn, elderly, pet, cooking style) with helper performance vectors derived from past reviews. Conceptually parallel to Vivino's wine recommendation engine.
-- **Best Helper Recommendations** — top-N ranked candidates per family query, leveraging both collaborative and content-based filtering (W7 Lecture Notes, 2026).
+- **Best Helper Recommendations** — top-N ranked candidates per family query, leveraging both collaborative and content-based filtering (Ricci, Rokach, & Shapira, 2015).
 - **Smart Search Filters** — nationality, years of experience, language proficiency, salary expectation.
 
 For the helper side, a transparent **rating dashboard** with constructive feedback loops empowers career development and salary negotiation.
@@ -261,7 +260,7 @@ HelperConnect's data engine relies on three feeders:
 | **Helper Self-Service (Supporting)** | Helpers upload skill videos, certifications, and language test scores | Medium |
 | **Public-record Integration** | API integration with Immigration Department contract records; cross-validated with self-reported tenure | High |
 
-A **cold-start campaign** invites past employers to seed reviews of helpers they previously employed, in exchange for three months of complimentary Premium membership — directly mirroring Vivino's bootstrap "Manual Hack" of human-validated label entries (S13 Lecture Notes, 2026).
+A **cold-start campaign** invites past employers to seed reviews of helpers they previously employed, in exchange for three months of complimentary Premium membership — directly mirroring Vivino's bootstrap "Manual Hack" of human-validated label entries (Vivino, 2023).
 
 ---
 
@@ -350,7 +349,7 @@ Each phase is a *prerequisite* for the next. Helpers will not invest in profile 
 
 ## **8. Business Model & Revenue Streams**
 
-HelperConnect monetises across all four of the canonical multi-sided patterns articulated in W10: **(1) transaction cut, (2) charging for access, (3) charging for attention, (4) charging for complementary services** (W10 Lecture Notes, 2026).
+HelperConnect monetises across all four canonical multi-sided monetisation patterns described in the platform-economics literature: **(1) transaction cut, (2) charging for access, (3) charging for attention, (4) charging for complementary services** (Eisenmann et al., 2006; Parker et al., 2016).
 
 ### **8.1 The Four Revenue Streams**
 
@@ -363,11 +362,11 @@ HelperConnect monetises across all four of the canonical multi-sided patterns ar
 
 ### **8.2 Mapping to Course Theory**
 
-[**Insert Figure 9: Mapping HelperConnect Revenue Streams to W10 Monetisation Patterns**]
+[**Insert Figure 9: Mapping HelperConnect Revenue Streams to Multi-sided Monetisation Patterns**]
 
 ```mermaid
 flowchart TB
-    subgraph W10["W10 Monetisation Taxonomy"]
+    subgraph TAX["Multi-sided Monetisation Taxonomy"]
         M1["① Transaction Cut"]
         M2["② Charge for Access<br/>(subscription / curation)"]
         M3["③ Charge for Attention<br/>(advertising)"]
@@ -380,7 +379,7 @@ flowchart TB
     M3 --> S4a["Stream 4a:<br/>Partner Ads (CPA/CPL)"]
     M4 --> S4b["Stream 4b:<br/>Insurance / Medical / Training"]
 
-    style W10 fill:#f1f5f9,stroke:#475569
+    style TAX fill:#f1f5f9,stroke:#475569
     style S1 fill:#16a34a,stroke:#15803d,color:#fff
     style S2 fill:#0b6efd,stroke:#1d4ed8,color:#fff
     style S3 fill:#7c3aed,stroke:#6d28d9,color:#fff
@@ -459,7 +458,7 @@ Helpers occupy a structurally weaker bargaining position; even with anonymity, h
 
 ### **10.4 Disintermediation and Agency Pushback**
 
-Once families and helpers are connected on the platform, both have an incentive to consummate the contract off-platform, evading transaction fees. The mitigation is to bundle non-substitutable services (insurance, immigration paperwork, dispute mediation) into the on-platform contract path, as Care.com and Sittercity have done in adjacent markets (W10 Lecture Notes, 2026). Established agencies, whose business model is threatened, may also lobby regulators or initiate legal challenges; HelperConnect's strategy is to invite agencies onto the platform as Phase 3 partners rather than antagonise them.
+Once families and helpers are connected on the platform, both have an incentive to consummate the contract off-platform, evading transaction fees. The mitigation is to bundle non-substitutable services (insurance, immigration paperwork, dispute mediation) into the on-platform contract path, as Care.com and Sittercity have done in adjacent markets (Sundararajan, 2016). Established agencies, whose business model is threatened, may also lobby regulators or initiate legal challenges; HelperConnect's strategy is to invite agencies onto the platform as Phase 3 partners rather than antagonise them.
 
 ### **10.5 Cold-Start Failure Scenarios**
 
@@ -492,7 +491,7 @@ quadrantChart
 
 The Hong Kong FDH market is one of the clearest contemporary examples of an *Akerlofian* lemons market: high-stakes hiring decisions are routinely made on the basis of unverifiable signals, with predictable welfare losses for both employers and helpers. We have argued that the underlying problem is not regulatory or cultural but *informational* — the absence of an information system capable of aggregating, verifying, and redistributing trustworthy signals at scale.
 
-**HelperConnect** is our proposed answer. Drawing on the conceptual machinery developed across the ISOM 2010 syllabus — IS-as-central-nervous-system (W2–W3), the economics of digital goods (W4–W5), e-commerce taxonomies (W7), platform and network theory (W8–W9), and multi-sided business models (W10) — and explicitly modelled on the Vivino case (S13), HelperConnect converts each successful placement into a re-usable, multi-dimensional review record. Through a four-phase sequential onboarding strategy and four complementary revenue streams, the platform compounds match accuracy and locks in two-sided switching costs, producing a defensible data-network moat that competitors cannot shortcut.
+**HelperConnect** is our proposed answer. Drawing on the established conceptual machinery of information systems, the economics of digital goods, e-commerce taxonomies, two-sided platform and network theory, and multi-sided business models — and explicitly modelled on the Vivino precedent — HelperConnect converts each successful placement into a re-usable, multi-dimensional review record. Through a four-phase sequential onboarding strategy and four complementary revenue streams, the platform compounds match accuracy and locks in two-sided switching costs, producing a defensible data-network moat that competitors cannot shortcut.
 
 The broader social value of the platform extends beyond commercial returns. A market in which helper performance is fairly recognised allows skilled workers to capture higher wages, increases their bargaining power, and enhances the dignity of domestic-care labour. A market in which families can hire with confidence reduces caregiving disruption, improves child and elder outcomes, and frees parents — particularly mothers — to participate fully in the formal economy. In an aging society such as Hong Kong, where eldercare demand is structurally rising, a trustworthy FDH-matching infrastructure is not merely a business opportunity; it is a social necessity.
 
@@ -534,21 +533,21 @@ Stiglitz, J. E. (1975). The theory of "screening," education, and the distributi
 
 Tadelis, S. (2016). Reputation and feedback systems in online platform markets. *Annual Review of Economics, 8*, 321–340.
 
-Kim, Y. (2026a). *Digital economy I: What is information systems?* [Lecture notes, Week 2]. ISOM 2010, The Hong Kong University of Science and Technology.
+Brynjolfsson, E., & McAfee, A. (2014). *The second machine age: Work, progress, and prosperity in a time of brilliant technologies*. W. W. Norton & Company.
 
-Kim, Y. (2026b). *Digital economy II: Enterprise systems* [Lecture notes, Week 3]. ISOM 2010, The Hong Kong University of Science and Technology.
+Cusumano, M. A., Gawer, A., & Yoffie, D. B. (2019). *The business of platforms: Strategy in the age of digital competition, innovation, and power*. Harper Business.
 
-Kim, Y. (2026c). *Digital economy III & IV: Digital goods and digital markets* [Lecture notes, Weeks 4–5]. ISOM 2010, The Hong Kong University of Science and Technology.
+Laudon, K. C., & Traver, C. G. (2021). *E-commerce 2021: Business, technology, society* (16th ed.). Pearson.
 
-Kim, Y. (2026d). *E-commerce* [Lecture notes, Week 7]. ISOM 2010, The Hong Kong University of Science and Technology.
+Ricci, F., Rokach, L., & Shapira, B. (Eds.). (2015). *Recommender systems handbook* (2nd ed.). Springer. https://doi.org/10.1007/978-1-4899-7637-6
 
-Kim, Y. (2026e). *What is a digital platform?* [Lecture notes, Week 8]. ISOM 2010, The Hong Kong University of Science and Technology.
+Sacks, D. (2014, August 23). The growth of Uber [Diagram]. Retrieved from https://twitter.com/DavidSacks/status/475073311383105536
 
-Kim, Y. (2026f). *Digital platforms: Network effects & platform architecture* [Lecture notes, Week 9]. ISOM 2010, The Hong Kong University of Science and Technology.
+Shapiro, C., & Varian, H. R. (1999). *Information rules: A strategic guide to the network economy*. Harvard Business School Press.
 
-Kim, Y. (2026g). *Multi-sided digital platform business model* [Lecture notes, Week 10]. ISOM 2010, The Hong Kong University of Science and Technology.
+Sundararajan, A. (2016). *The sharing economy: The end of employment and the rise of crowd-based capitalism*. MIT Press.
 
-Kim, Y. (2026h). *Case study (Vivino) and introduction to the final project* [Lecture notes, Session 13]. ISOM 2010, The Hong Kong University of Science and Technology.
+Vivino. (2023). *About Vivino: How the world's largest wine community works*. Vivino ApS. https://www.vivino.com/about
 
 ---
 
